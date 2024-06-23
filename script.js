@@ -7,30 +7,26 @@ const checkPalindrome = (str) => {
   str = str.toLowerCase().replace(toEx, "");
   let len = str.length;
 
-  for (let i = 0; i < len / 2; i++) {
-    if (str[i] !== str[len - 1 - i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-checkButton.addEventListener("click", function () {
   if (inputString.value === "") {
     alert("Please input a value");
     return;
   }
-  if (checkPalindrome(inputString.value) === false) {
-    result.innerHTML = `${inputString.value} is not a palindrome`;
-  } else {
-    result.innerHTML = `${inputString.value} is a palindrome`;
+
+  for (let i = 0; i < len / 2; i++) {
+    if (str[i] !== str[len - 1 - i]) {
+      return (result.innerHTML = `${inputString.value} is not a palindrome`);
+    }
   }
+  result.innerHTML = `${inputString.value} is a palindrome`;
+};
+
+checkButton.addEventListener("click", function () {
+  checkPalindrome(inputString.value);
 });
 
-/*  still working on this
-checkButton.addEventListener("keydown", (e) => {
+/*  still working on this */
+inputString.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    checkPalindrome();
+    checkPalindrome(inputString.value);
   }
 });
-*/
