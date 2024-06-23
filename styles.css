@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 50px;
+  background-color: #035948;
+  padding: 30px 20px 30px 20px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F5F5F5;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  font-style: italic;
+  margin: 25px;
+  color: #F5F5F5;
+}
+
+#text-input {
+  padding: 15px 10px;
+  margin-right: 8px;
+  font-size: 13px;
+  width: 350px;
+  border-radius: 8px;
+  border-style: none;;
+}
+
+#check-btn {
+  padding: 15px 25px;
+  font-size: 15px;
+  border-radius: 13px;
+  border-style: none;
+}
+
+#result {
+  margin: 20px;
+  padding: 15px 15px;
+  font-size: 25px;
+  color: #F5F5F5;
+  /* background-color: rgb(245, 245, 245, 70%); */
+  border-radius: 10px;
+}
+
+/* Media query for viewport  
+   width less than 800px */
+@media (max-width: 600px) { 
+h1 { 
+  font-size: 30px; 
+  text-align: center;
+} 
+p {
+  text-align: center;
+}
+h3 { 
+  font-size: 20px; 
+} 
+#pal-enter {
+  padding: 5px 15px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-input {
+  padding: 15px 10px;
+  font-size: 13px;
+  width: 250px;
+  border-radius: 8px;
+  border-style: none;;
+}
+
+#check-btn {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 13px 20px;
+  font-size: 13px;
+  border-radius: 13px;
+  border-style: none;
+}
+
+#result {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+}
+
+  
+/* Media query for viewport width 
+   greater than 800px */
+@media (min-width: 600px) { 
+     h1 { 
+           font-size: 40px; 
+     } 
+     h3 { 
+           font-size: 36px; 
+     } 
+}
