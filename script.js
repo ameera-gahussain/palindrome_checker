@@ -24,7 +24,6 @@ checkButton.addEventListener("click", function () {
   checkPalindrome(inputString.value);
 });
 
-/*  still working on this */
 inputString.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     checkPalindrome(inputString.value);
